@@ -4,7 +4,7 @@ class CreateShelters < ActiveRecord::Migration[5.2]
       t.string :name
       t.text :adress
       t.text :opening_hours
-      t.string :telephone
+      t.string :phone_number
       t.string :account_number
 
       t.timestamps

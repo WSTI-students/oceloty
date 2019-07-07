@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2019_07_07_090215) do
     t.string "name"
     t.text "adress"
     t.text "opening_hours"
-    t.string "telephone"
+    t.string "phone_number"
     t.string "account_number"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
