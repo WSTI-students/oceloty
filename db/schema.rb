@@ -23,13 +23,13 @@ ActiveRecord::Schema.define(version: 2019_07_11_155709) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.boolean "record_numbers"
-    t.boolean "addapted_child"
-    t.boolean "allergies"
-    t.boolean "chip"
-    t.boolean "another_dog"
-    t.boolean "another_cat"
-    t.boolean "sterylization"
+    t.string "record_numbers"
+    t.boolean "children_friendly"
+    t.boolean "allergic_friendly"
+    t.boolean "microchip"
+    t.boolean "dog_friendly"
+    t.boolean "cat_friendly"
+    t.boolean "sterilized"
   end
 
   create_table "shelters", force: :cascade do |t|
