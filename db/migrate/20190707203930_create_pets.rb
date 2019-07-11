@@ -3,7 +3,8 @@ class CreatePets < ActiveRecord::Migration[5.2]
     create_table :pets do |t|
       t.string :name
       t.string :sex
-      t.integer :age
+      t.integer :birth_date
+      t.string :age_info
       t.string :breed
       t.string :type
       t.string :size
