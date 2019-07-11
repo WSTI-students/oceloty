@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_07_203930) do
+ActiveRecord::Schema.define(version: 2019_07_11_155709) do
 
   create_table "pets", force: :cascade do |t|
     t.string "name"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 2019_07_07_203930) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.boolean "record_numbers"
+    t.boolean "addapted_child"
+    t.boolean "allergies"
+    t.boolean "chip"
+    t.boolean "another_dog"
+    t.boolean "another_cat"
+    t.boolean "sterylization"
   end
 
   create_table "shelters", force: :cascade do |t|
