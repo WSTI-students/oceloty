@@ -23,10 +23,10 @@ ActiveRecord::Schema.define(version: 2019_07_11_155709) do
     t.text "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "record_numbers"
+    t.string "registry_id"
     t.boolean "children_friendly"
     t.boolean "allergic_friendly"
-    t.boolean "microchip"
+    t.boolean "microchipped"
     t.boolean "dog_friendly"
     t.boolean "cat_friendly"
     t.boolean "sterilized"
