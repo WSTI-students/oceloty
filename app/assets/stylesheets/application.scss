@@ -1,2 +1,22 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+.card-deck{
+padding: 60px;
+}
+.display-1{
+  font-size: 90px;
+  text-align: center;
+}
+.list-group-item{
+  border: 0;
+  padding-top: 0;
+}
+.card-body{
+  padding-bottom: 0;
+}
+.btn{
+  margin-bottom: 20px;
+}
+.card-img{
+  padding: 5%;
+}
