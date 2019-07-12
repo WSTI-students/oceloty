@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @pet.name %>
+</p>
+
+<div id= 'image_pets' >
+<%= image_tag(@pet.image, style: 'width:100%') %>
+</div>
+
+<p>
+  <strong>Sex:</strong>
+  <%= @pet.sex %>
+</p>
+
+<p>
+  <strong>Species:</strong>
+  <%= @pet.species %>
+</p>
+
+
+<p>
+  <strong>Birth date:</strong>
+  <%= @pet.birth_date %>
+</p>
+
+<p>
+  <strong>Children friendly:</strong>
+  <%= @pet.children_friendly %>
+</p>
+
+<p>
+  <strong>Allergic friendly:</strong>
+  <%= @pet.allergic_friendly %>
+</p>
+
+<p>
+  <strong>Dog friendly:</strong>
+  <%= @pet.dog_friendly %>
+</p>
+
+<p>
+  <strong>Sterilized:</strong>
+  <%= @pet.sterilized %>
+</p>
+
+<p>
+  <strong>Microchipped:</strong>
+  <%= @pet.microchipped %>
+</p>
+
+<%= link_to 'Edit', edit_pet_path(@pet) %> |
+<%= link_to 'Back', pets_path %>

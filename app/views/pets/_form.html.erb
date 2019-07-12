@@ -1,0 +1,87 @@
+<%= form_with(model: pet, local: true) do |form| %>
+  <% if pet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pet.errors.count, "error") %> prohibited this pet from being saved:</h2>
+      <ul>
+      <% pet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name %>
+</div>
+
+<div class="field">
+    <%= form.label :sex %>
+   <%= form.select(:sex, Pet::CLASS_pets_sex, include_blank: true) %>
+  </div>
+
+<div class="field">
+    <%= form.label :birth_date %>
+    <%= form.number_field :birth_date %>
+</div>
+
+<div class="field">
+    <%= form.label :breed %>
+    <%= form.text_field :breed %>
+</div>
+
+<div class="field">
+    <%= form.label :species %>
+    <%= form.text_field :species %>
+</div>
+
+<div class="field">
+    <%= form.label :size %>
+   <%= form.select(:size, Pet::CLASS_pets_size, include_blank: true) %>
+</div>
+
+<div class="field">
+    <%= form.label :registry_id %>
+    <%= form.text_field :registry_id %>
+</div>
+
+<div class="field">
+    <%= form.label :description %>
+    <%= form.text_area :description %>
+</div>
+
+ <div class="field">
+    <%= form.label :children_friendly %>
+    <%= form.select(:children_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :allergic_friendly %>
+    <%= form.select(:allergic_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+<div class="field">
+    <%= form.label :microchipped %>
+    <%= form.select(:microchipped, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dog_friendly %>
+    <%= form.select(:dog_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+<div class="field">
+    <%= form.label :cat_friendly %>
+    <%= form.select(:cat_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+<div class="field">
+    <%= form.label :sterilized %>
+    <%= form.select(:sterilized, Pet:: BOOLEAN_OPTION, include_blank: true) %>
+  </div>
+
+ <div class="actions">
+    <%= form.submit %>
+  </div>
+
+ <% end %>
