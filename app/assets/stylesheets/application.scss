@@ -1,5 +1,11 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+.navbar{
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 9;
+}
 .card-deck{
 padding: 60px;
 }
@@ -29,11 +35,20 @@ padding: 60px;
 }
 .jumbotron{
   text-align: center;
-  background-image: linear-gradient(gray,#fff);
+  border-radius: 0;
 }
 .mb-2, .my-2{
   margin-right: 20px;
 }
 h4{
   margin-left:2%;
+}
+.display-4{
+  padding-top: 5%; 
+}
+.btn{
+  border-radius: 1.5rem;
+}
+.form-control{
+  border-radius: 1.5rem;
 }

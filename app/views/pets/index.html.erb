@@ -10,10 +10,10 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Zwierzęta<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#zwierzeta">Zwierzęta<span class="sr-only">(current)</span></a>
       </li>
         <li class="nav-item">
-        <a class="nav-link" href="#">Schroniska<span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#schroniska">Schroniska<span class="sr-only">(current)</span></a>
       </li>
     </ul>
   </div>
@@ -38,14 +38,14 @@
 </nav>
 <div class="jumbotron">
   <h1 class="display-4">OCELOT</h1>
-  <p class="lead">Znajdź swojego zwierza</p>
-  <p>...</p>
-  <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+  <p class="lead">Znajdź swojego zwierza!</p>
+  <p class="lead">Załuż konto, jako indywidualny użytkownik albo schronisko.</p>
+  <a class="btn btn-primary btn-lg" href="http://localhost:3000/users/sign_in" role="button">Zarejestruj się</a>
 </div>
 </head>
 <body>
   <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <h4 id="pets">Lista Zwierząt</h4>
+  <a class="dropdown-item" id="zwierzeta"><h4>Zwierzęta</h4></a>
 </div>
  <div class="card-deck">
   <div class="card shadow-sm">
@@ -58,7 +58,7 @@
     <li class="list-group-item">kot</li>
   </ul>
   <div class="card-body">
- <a href="#" class="btn btn-primary">Go somewhere</a>
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
    </div>
   </div>
   <div class="card shadow-sm">
@@ -71,7 +71,7 @@
     <li class="list-group-item">ocelot</li>
   </ul>
   <div class="card-body">
- <a href="#" class="btn btn-primary">Go somewhere</a>
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
     </div>
   </div>
   <div class="card shadow-sm">
@@ -84,12 +84,12 @@
     <li class="list-group-item">pies</li>
   </ul>
   <div class="card-body">
- <a href="#" class="btn btn-primary">Go somewhere</a>
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
   </div>
   </div>
 </div>
 <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
-  <h4 id="shelters">Lista Schronisk</h4>
+  <a class="dropdown-item" id="schroniska"><h4>Schroniska</h4></a>
 </div>
 <div class="card-deck">
   <div class="card mb-3 shadow-sm" style="max-width: 540px;">
