@@ -14,9 +14,26 @@ padding: 60px;
 .card-body{
   padding-bottom: 0;
 }
-.btn{
+.btn-primary{
   margin-bottom: 20px;
 }
 .card-img{
   padding: 5%;
+}
+.card{
+  border-radius: 0.5rem;
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+.card-img-top{
+  border-radius: 0.5rem 0.5rem 0  0;
+}
+.jumbotron{
+  text-align: center;
+  background-image: linear-gradient(gray,#fff);
+}
+.mb-2, .my-2{
+  margin-right: 20px;
+}
+h4{
+  margin-left:2%;
 }
