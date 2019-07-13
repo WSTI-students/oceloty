@@ -5,10 +5,6 @@
   <%= @pet.name %>
 </p>
 
-<div id= 'image_pets' >
-<%= image_tag(@pet.image, style: 'width:100%') %>
-</div>
-
 <p>
   <strong>Sex:</strong>
   <%= @pet.sex %>
@@ -19,10 +15,20 @@
   <%= @pet.species %>
 </p>
 
+<p>
+  <strong>birth_date:</strong>
+  <%= @pet.birth_date %>
+</p>
 
 <p>
-  <strong>Birth date:</strong>
-  <%= @pet.birth_date %>
+  <strong>*Age info:</strong>
+  <%= @pet.age_info %>
+</p>
+
+
+<p>
+  <strong>Breed:</strong>
+  <%= @pet.breed %>
 </p>
 
 <p>
@@ -38,6 +44,11 @@
 <p>
   <strong>Dog friendly:</strong>
   <%= @pet.dog_friendly %>
+</p>
+
+<p>
+  <strong>Cat friendly:</strong>
+  <%= @pet.cat_friendly %>
 </p>
 
 <p>

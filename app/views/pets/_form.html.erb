@@ -11,72 +11,77 @@
   <% end %>
 
 <div class="field">
-    <%= form.label :name %>
+    <%= form.label 'Imię' %>
     <%= form.text_field :name %>
 </div>
 
 <div class="field">
-    <%= form.label :sex %>
+    <%= form.label 'Płeć' %>
    <%= form.select(:sex, Pet::CLASS_pets_sex, include_blank: true) %>
   </div>
 
 <div class="field">
-    <%= form.label :birth_date %>
+    <%= form.label 'Rok urodzenia' %>
     <%= form.number_field :birth_date %>
 </div>
 
 <div class="field">
-    <%= form.label :breed %>
+    <%= form.label 'Wiek' %>
+    <%= form.text_field :age_info %>
+</div>
+
+<div class="field">
+    <%= form.label 'Rasa' %>
     <%= form.text_field :breed %>
 </div>
 
 <div class="field">
-    <%= form.label :species %>
+    <%= form.label 'Gatunek' %>
     <%= form.text_field :species %>
 </div>
 
 <div class="field">
-    <%= form.label :size %>
+    <%= form.label 'Wielkość' %>
    <%= form.select(:size, Pet::CLASS_pets_size, include_blank: true) %>
 </div>
 
 <div class="field">
-    <%= form.label :registry_id %>
+    <%= form.label 'Numer ewidencyjny' %>
     <%= form.text_field :registry_id %>
 </div>
 
 <div class="field">
-    <%= form.label :description %>
+    <%= form.label 'Opis' %>
     <%= form.text_area :description %>
 </div>
 
  <div class="field">
-    <%= form.label :children_friendly %>
+    <%= form.label 'Przyjazny dla dzieci' %>
     <%= form.select(:children_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
   <div class="field">
-    <%= form.label :allergic_friendly %>
+    <%= form.label 'Dla alergików' %>
     <%= form.select(:allergic_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
 <div class="field">
-    <%= form.label :microchipped %>
+    <%= form.label 'Oczipowany' %>
     <%= form.select(:microchipped, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
   <div class="field">
-    <%= form.label :dog_friendly %>
+    <%= form.label 'Toleruję psy' %>
     <%= form.select(:dog_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
 <div class="field">
-    <%= form.label :cat_friendly %>
+    <%= form.label 'Toleruje koty' %>
     <%= form.select(:cat_friendly, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
 <div class="field">
-    <%= form.label :sterilized %>
+    <%= form.label 'Sterylizacja/kastracja' %>
     <%= form.select(:sterilized, Pet:: BOOLEAN_OPTION, include_blank: true) %>
   </div>
 
