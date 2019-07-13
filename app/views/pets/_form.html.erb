@@ -17,7 +17,7 @@
 
 <div class="field">
     <%= form.label 'Płeć' %>
-   <%= form.select(:sex, Pet::CLASS_pets_sex, include_blank: true) %>
+   <%= form.select(:sex, Pet.sexes.keys, include_blank: true) %>
   </div>
 
 <div class="field">
@@ -37,12 +37,12 @@
 
 <div class="field">
     <%= form.label 'Gatunek' %>
-    <%= form.text_field :species %>
+   <%= form.select(:species, Pet.species.keys, include_blank: true) %>
 </div>
 
 <div class="field">
     <%= form.label 'Wielkość' %>
-   <%= form.select(:size, Pet::CLASS_pets_size, include_blank: true) %>
+   <%= form.select(:size, Pet.sizes.keys, include_blank: true) %>
 </div>
 
 <div class="field">
