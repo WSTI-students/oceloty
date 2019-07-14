@@ -27,10 +27,12 @@
   </button>
   <div class="dropdown-menu dropdown-menu-right">
     <button class="dropdown-item" type="button">
-    <a href="http://localhost:3000/users/sign_in">Użytkownik<span class="sr-only">(current)</span></a>
+      <%= link_to "Użytkownik", "/users/sign_in" %> 
+      <span class="sr-only">(current)</span></a>
  <div class="dropdown-menu dropdown-menu-right">
     <button class="dropdown-item" type="button">
-    <a href="http://localhost:3000/shelters/sign_in">Schronisko<span class="sr-only">(current)</span></a>
+      <%= link_to "Schronisko", "/shelters/sign_in" %> 
+    <span class="sr-only">(current)</span></a>
     </button>
   </div>
 </div>
@@ -40,7 +42,9 @@
   <h1 class="display-4">OCELOT</h1>
   <p class="lead">Znajdź swojego zwierza!</p>
   <p class="lead">Załóż konto, jako indywidualny użytkownik albo schronisko.</p>
-  <a class="btn btn-primary btn-lg" href="http://localhost:3000/users/sign_in" role="button">Zarejestruj się</a>
+  <button class="btn btn-light btn-lg" role="button">
+  <%= link_to "Użytkownik", "/users/sign_in" %> 
+   </button>
 </div>
 </head>
 <body>
