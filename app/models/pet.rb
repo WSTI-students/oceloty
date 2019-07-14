@@ -1,5 +1,5 @@
 class Pet < ApplicationRecord
-  BOOLEAN_OPTION = { 'Tak' => true, 'Nie' => false, 'Nie wiadomo' => nil }.freeze
+  BOOLEAN_OPTIONS = { 'Tak' => true, 'Nie' => false, 'Nie wiadomo' => nil }.freeze
 
   enum sex: %w[samiec samica].freeze
   enum size: %w[mały średni duży].freeze
