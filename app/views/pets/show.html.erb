@@ -1,13 +1,18 @@
-<p id="notice"><%= notice %></p>
 
-<div class= "image_pets" >
-  <%= image_tag(@pet.image) %>
-</div>
-
-<p>
-  <strong>Name:</strong>
-  <%= @pet.name %>
-</p>
+<div class = "container">
+  <div class = "row">
+    <div class = "col">
+      <div class= "image_pets" >
+        <%= image_tag(@pet.image) %>
+      </div>
+    </div>
+  </div>
+  <div class = "row">
+    <div class = "col">
+  <p>
+    <strong>Name:</strong>
+    <%= @pet.name %>
+  </p>
 
 <p>
   <strong>Sex:</strong>
@@ -65,4 +70,7 @@
 </p>
 
 <%= link_to 'Edit', edit_pet_path(@pet) %> |
-<%= link_to 'Back', pets_path %>
+
+<div class="container">
+  <%= link_to 'Back', pets_path %>
+</div>

@@ -10,88 +10,94 @@
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
-  </div>
+  <div class = "container">
+    <div class = "row">
+      <div class="col-auto">
+        <div class="form-group">
+          <%= form.file_field :image %>
+        </div>
+      </div>
+     </div>
 
-  <div class="field">
-    <%= form.label 'Imię' %>
-    <%= form.text_field :name %>
-  </div>
+        <div class="form-row align-items-center">
+          <div class="col-auto">
+          
+            <div class="form-group">
+              <%= form.label 'Imię' %>
+              <%= form.text_field :name, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Płeć' %>
-    <%= form.select(:sex, Pet.sexes.keys, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Płeć' %>
+              <%= form.select(:sex, Pet.sexes.keys, include_blank: true, :class=>"form-control") %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Rok urodzenia' %>
-    <%= form.number_field :birth_date %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Rok urodzenia' %>
+              <%= form.number_field :birth_date, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Wiek' %>
-    <%= form.text_field :age_info %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Wiek' %>
+              <%= form.text_field :age_info, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Rasa' %>
-    <%= form.text_field :breed %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Rasa' %>
+              <%= form.text_field :breed, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Gatunek' %>
-    <%= form.select(:species, Pet.species.keys, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Gatunek' %>
+              <%= form.select(:species, Pet.species.keys, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Wielkość' %>
-    <%= form.select(:size, Pet.sizes.keys, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Wielkość' %>
+              <%= form.select(:size, Pet.sizes.keys, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Numer ewidencyjny' %>
-    <%= form.text_field :registry_id %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Numer ewidencyjny' %>
+              <%= form.text_field :registry_id, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Opis' %>
-    <%= form.text_area :description %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Opis' %>
+              <%= form.text_area :description, :class=>"form-control" %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Przyjazny dla dzieci' %>
-    <%= form.select(:children_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Przyjazny dla dzieci' %>
+              <%= form.select(:children_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Dla alergików' %>
-    <%= form.select(:allergic_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Toleruję psy' %>
+              <%= form.select(:dog_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Oczipowany' %>
-    <%= form.select(:microchipped, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Toleruje koty' %>
+              <%= form.select(:cat_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Toleruję psy' %>
-    <%= form.select(:dog_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Dla alergików' %>
+              <%= form.select(:allergic_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Toleruje koty' %>
-    <%= form.select(:cat_friendly, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Sterylizacja/kastracja' %>
+              <%= form.select(:sterilized, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="field">
-    <%= form.label 'Sterylizacja/kastracja' %>
-    <%= form.select(:sterilized, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
-  </div>
+            <div class="form-group">
+              <%= form.label 'Oczipowany' %>
+              <%= form.select(:microchipped, Pet:: BOOLEAN_OPTIONS, include_blank: true) %>
+            </div>
 
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-
+        </div>
+      </div> 
+        <button type="submit" class="btn btn-primary">Zatwierdź</button>
 <% end %>
