@@ -1,10 +1,128 @@
 <head>
-  <title>OCELOTY</title>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">OCELOT</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#zwierzeta">Zwierzęta<span class="sr-only">(current)</span></a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#schroniska">Schroniska<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+  </div>
+  <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Szukaj</button>
+    </form>
+      <div class="btn-group">
+  <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Zaloguj się
+  </button>
+  <div class="dropdown-menu dropdown-menu-right">
+      <%= link_to "Użytkownik", new_users_session_path, class:"dropdown-item", role: "button"%> 
+      <span class="sr-only">(current)</span></a>
+ <div class="dropdown-menu dropdown-menu-right">
+      <%= link_to "Schronisko", new_shelter_session_path, class:"dropdown-item", role: "button" %> 
+    <span class="sr-only">(current)</span></a>
+  </div>
+</div>
+</nav>
+</nav>
+<div class="jumbotron">
+  <h1 class="display-4">OCELOT</h1>
+  <p class="lead">Znajdź swojego zwierza!</p>
+  <p class="lead">Załóż konto, jako indywidualny użytkownik albo schronisko.</p>
+  <%= link_to "Zarejestruj się jako użytkownik", new_user_registration_path, class:"btn btn-light btn-lg", role: "button" %> 
+  <%= link_to "Zarejestruj schronisko", new_shelter_registration_path, class: "btn btn-light btn-lg", role: "button" %> 
+</div>
 </head>
 <body>
-  <section>
-    <h1>OCELOTY</h1>
-    <h2>LISTA ZWIERZĄT</h2>
-    <p>Lorem ipsum</p>
-  </section>
+  <div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <a class="dropdown-item" id="zwierzeta"><h4>Zwierzęta</h4></a>
+</div>
+ <div class="card-deck">
+  <div class="card shadow-sm">
+    <img src="https://images.unsplash.com/photo-1507984211203-76701d7bb120?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1652&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Kitku</h5>
+       </div>
+    <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">samiec</li>
+    <li class="list-group-item">kot</li>
+  </ul>
+  <div class="card-body">
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
+   </div>
+  </div>
+  <div class="card shadow-sm">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTApZLoQvpqAcM8zAciA8Xwol-OOM6jdsPSfDLO2LD82jc63m2z" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Ocelot</h5>
+       </div>
+    <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">samiec</li>
+    <li class="list-group-item">ocelot</li>
+  </ul>
+  <div class="card-body">
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
+    </div>
+  </div>
+  <div class="card shadow-sm">
+    <img src="https://images.unsplash.com/photo-1507146426996-ef05306b995a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Pieseł</h5>
+    </div>
+    <ul class="list-group list-group-horizontal">
+    <li class="list-group-item">samiec</li>
+    <li class="list-group-item">pies</li>
+  </ul>
+  <div class="card-body">
+ <a href="#" class="btn btn-primary">Zobacz zwierza</a>
+  </div>
+  </div>
+</div>
+<div data-spy="scroll" data-target="#navbar-example2" data-offset="0">
+  <a class="dropdown-item" id="schroniska"><h4>Schroniska</h4></a>
+</div>
+<div class="card-deck">
+  <div class="card mb-3 shadow-sm" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://schronisko.kalisz.pl/wp-content/uploads/2018/06/schronisko_logo.png" class="card-img" alt="logo">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Schronisko3</h5>
+      <button type="button" class="btn btn-secondary btn-sm">Zobacz</button>
+    </div>
+  </div>
+</div>
+  <div class="card mb-3 shadow-sm" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://schronisko.kalisz.pl/wp-content/uploads/2018/06/schronisko_logo.png" class="card-img" alt="logo">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Schronisko3</h5>
+      <button type="button" class="btn btn-secondary btn-sm">Zobacz</button>
+    </div>
+  </div>
+</div>
+<div class="card mb-3 shadow-sm" style="max-width: 540px;">
+  <div class="row no-gutters">
+    <div class="col-md-4">
+      <img src="http://schronisko.kalisz.pl/wp-content/uploads/2018/06/schronisko_logo.png" class="card-img" alt="logo">
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Schronisko3</h5>
+      <button type="button" class="btn btn-secondary btn-sm">Zobacz</button>
+    </div>
+  </div>
+</div>
 </body>
