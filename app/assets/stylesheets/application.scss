@@ -1,2 +1,7 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
+
+.image_pets img {
+  max-width: 400px;
+  height: auto;
+}
