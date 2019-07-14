@@ -1,55 +1,62 @@
 // Custom bootstrap variables must be set or imported *before* bootstrap.
 @import "bootstrap";
-.navbar{
+
+.navbar {
   position: fixed; 
   top: 0; 
   width: 100%;
   z-index: 9;
 }
-.card-deck{
+.card-deck {
 padding: 60px;
 }
-.display-1{
+.display-1 {
   font-size: 90px;
   text-align: center;
 }
-.list-group-item{
+.list-group-item {
   border: 0;
   padding-top: 0;
 }
-.card-body{
+.card-body {
   padding-bottom: 0;
 }
-.btn-primary{
+.btn-primary { 
   margin-bottom: 20px;
 }
-.card-img{
+.card-img {
   padding: 5%;
 }
-.card{
+.card {
   border-radius: 0.5rem;
   border: 0px solid rgba(0, 0, 0, 0.125);
 }
-.card-img-top{
+.card-img-top {
   border-radius: 0.5rem 0.5rem 0  0;
 }
-.jumbotron{
+.jumbotron {
   text-align: center;
   border-radius: 0;
   background-color: rgb(163, 162, 162);
 }
-.mb-2, .my-2{
+.mb-2, .my-2 {
   margin-right: 20px;
 }
-h4{
+h4 {
   margin-left:2%;
 }
-.display-4{
+.display-4 {
   padding-top: 5%; 
 }
-.btn{
+.btn {
   border-radius: 1.5rem;
 }
-.form-control{
+
+.form-control {
   border-radius: 1.5rem;
+}
+
+.image_pets img {
+  max-width: 400px;
+  height: auto;
 }
