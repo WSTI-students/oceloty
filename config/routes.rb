@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   root to: 'pets#index'
 
   resources :shelters, only: [] do
-    resources :pets, only: [:index], controller: 'shelters/pets'
+    resources :pets, controller: 'shelters/pets'
   end
+
+  resources :pets, only: [:index, :show]
 end
