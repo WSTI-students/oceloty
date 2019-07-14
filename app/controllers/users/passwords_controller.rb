@@ -2,6 +2,7 @@
 
 class Users::PasswordsController < Devise::PasswordsController
   include Accessible
+
   # GET /resource/password/new
   # def new
   #   super
