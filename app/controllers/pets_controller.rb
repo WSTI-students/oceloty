@@ -12,6 +12,20 @@ class PetsController < ApplicationController
     @pet = Pet.new
   end
 
+  def edit; end
+
+  def update
+    respond_to do |format|
+      if @pet.update(pet_params)
+        format.html { redirect_to @pet, notice: 'Pet was successfully updated.' }
+        format.json { render :show, status: :ok, location: @pet }
+      else
+        format.html { render :edit }
+        format.json { render json: @pet.errors, status: :unprocessable_entity }
+      end
+    end
+  end
+
   def create
     # tempolary solution
     shelter = Shelter.find_or_create_by!(name: "Schronisko", address: "Ul",
